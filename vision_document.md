@@ -34,4 +34,4 @@ Systém bude používán během otvírací doby kina, kdy budou zaměstnanci kin
 ## How
 **How will system be implemented?**
 
-Systém bude pravděpodobně implementován jako desktopová aplikace s pravidelnými aktualizacemi, přičemž není přímo specifikováno, jaká metodika vývoje bude použita. Pokud bychom měli volit na základě typu projektu, implementace by mohla probíhat agilně, s postupným přidáváním funkcí podle potřeby zákazníka.
+Implementace by mohla probíhat agilně, s postupným přidáváním funkcí podle potřeby zákazníka.
