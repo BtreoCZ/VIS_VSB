@@ -55,3 +55,9 @@
 1. Zaměstnanec nevypíše potřebné informace pro rezervaci.
 2. Systém vypíše „Prosím vyplňte všechny povinné informace“.
 3. Systém se vrátí na okno pro vypisování údajů o rezervaci s už vyplněnými údaji.
+
+
+# Aktivitní diagram
+
+   ![image](https://github.com/user-attachments/assets/25fd7ecd-d374-4372-9579-f06693430207)
+
