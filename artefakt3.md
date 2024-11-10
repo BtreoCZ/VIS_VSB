@@ -7,6 +7,9 @@
 - **Autentifikace**: OAuth 2.0, JWT
 - **Platby**: Možnosti integrace s platebními branami, jako je PayPal SDK nebo Stripe API, pro bezpečné online platby
 
+## Model diagram pro rezervační systém
+![Diagram rezervačního systému](model_diagram.png)
+
 ## 2. Odhad velikosti entit a jejich množství
 
 | **Entita**       | **Odhadovaná velikost na záznam** | **Odhadovaný počet záznamů** | **Celková velikost dat** |
