@@ -1,22 +1,24 @@
-
 # Technická specifikace: Kino Rezervační Systém
 
 ## 1. Architektura
-- **Frontend**: React.js (pro webové aplikace), React Native (pro mobilní aplikace)
-- **Backend**: Node.js/Express, REST API
-- **Databáze**: MySQL/PostgreSQL pro relační data, S3 nebo jiný blob storage pro přílohy (např. obrázky lístků)
+- **Backend**: ASP.NET Core (C#) pro tvorbu API a backend logiky
+- **Databáze**: SQLite pro relační data, vhodná pro menší objem dat a jednodušší aplikace
+- **Frontend**: Blazor pro webové aplikace, Xamarin/MAUI pro mobilní aplikace (iOS a Android)
 - **Autentifikace**: OAuth 2.0, JWT
-- **Platby**: Stripe API pro online platby
+- **Platby**: Možnosti integrace s platebními branami, jako je PayPal SDK nebo Stripe API, pro bezpečné online platby
+
 
 ## 2. Odhad velikosti entit a jejich množství
 
 | **Entita**       | **Odhadovaná velikost na záznam** | **Odhadovaný počet záznamů** | **Celková velikost dat** |
 |------------------|-----------------------------------|------------------------------|--------------------------|
-| **Přílohy**      | 1-5 MB                            | 100 000 - 1 000 000           | 100 GB - 5 TB            |
-| **Uživatelé**    | 500 KB                            | Max 100 000                   | 50 GB                    |
-| **Filmy**        | 200 KB                            | 1 000                         | 200 MB                   |
-| **Rezervace**    | 100 KB                            | 500 000 - 1 000 000           | 50 GB - 100 GB           |
-| **Členství**     | 50 KB                             | 50 000                        | 2.5 GB                   |
+| **Rezervace**    | 100 KB                            | 500 000 - 1 000 000         | 50 GB - 100 GB           |
+| **Platba**       | 50 KB                             | 500 000 - 1 000 000         | 25 GB - 50 GB            |
+| **Kino**         | 200 KB                            | 100 - 500                   | 20 MB - 100 MB           |
+| **Film**         | 300 KB                            | 1 000                       | 300 MB                   |
+| **Promítání**    | 100 KB                            | 10 000                      | 1 GB                     |
+| **Sedadlo**      | 10 KB                             | 10 000 - 20 000             | 100 MB - 200 MB          |
+| **Zákazník**     | 100 KB                            | Max 100 000                 | 10 GB                    |
 
 ## 3. Odhad počtu uživatelů současně pracujících se systémem
 - **Průměrný počet**: 500 uživatelů současně
@@ -41,13 +43,13 @@
 ## 6. Rozložení systému
 - **Microservices**: Každá hlavní funkce (např. správa uživatelů, platby, rezervace) bude implementována jako nezávislá služba pro snadnější škálování.
 - **Load Balancer**: NGINX/AWS ELB pro rozložení zátěže mezi servery.
-- **Databáze**: SQL databáze (MySQL/PostgreSQL) pro relační data a blob storage pro velké přílohy.
+- **Databáze**: SQLite pro relační entity.
 
 ## 7. Technologie a platformy
-- **Backend**: Node.js/Express (pro REST API)
-- **Frontend**: React.js pro web, React Native pro mobilní aplikace
-- **Databáze**: MySQL nebo PostgreSQL pro vztahové entity, S3 nebo Azure Blob Storage pro přílohy.
-- **Platby**: Stripe API pro bezpečné platby.
+- **Backend**: ASP.NET Core (C#) pro tvorbu API a backend logiky
+- **Frontend**: Blazor pro web, Xamarin/MAUI pro mobilní aplikace
+- **Databáze**: SQLite pro relační data
+- **Platby**: Stripe API nebo PayPal SDK pro bezpečné platby.
 - **Cílené platformy**: 
   - **Web**: Pro přístup přes prohlížeče (pro desktop a mobilní zařízení).
-  - **Mobilní aplikace**: React Native pro iOS/Android.
+  - **Mobilní aplikace**: Xamarin/MAUI pro iOS/Android.
