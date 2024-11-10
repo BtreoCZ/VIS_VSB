@@ -7,6 +7,7 @@
 - **Autentifikace**: OAuth 2.0, JWT
 - **Platby**: Možnosti integrace s platebními branami, jako je PayPal SDK nebo Stripe API, pro bezpečné online platby
 
+![Popis obrázku](C:\Users\judis\OneDrive - VSB-TUO\Plocha\VIS\mode_diagram)
 
 ## 2. Odhad velikosti entit a jejich množství
 
