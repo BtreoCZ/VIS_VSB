@@ -8,7 +8,7 @@
 - **Platby**: Možnosti integrace s platebními branami, jako je PayPal SDK nebo Stripe API, pro bezpečné online platby
 
 ## Model diagram pro rezervační systém
-![Diagram rezervačního systému](model_diagram.png)
+![conceptual_model](https://github.com/user-attachments/assets/dbd46137-5b21-40d0-9eba-79206310bcd2)
 
 ## 2. Odhad velikosti entit a jejich množství
 
