@@ -3,7 +3,7 @@
 ## 1. Architektura
 - **Backend**: ASP.NET Core (C#) pro tvorbu API a backend logiky
 - **Databáze**: SQLite pro relační data, vhodná pro menší objem dat a jednodušší aplikace
-- **Frontend**: Blazor pro webové aplikace, Xamarin/MAUI pro mobilní aplikace (iOS a Android)
+- **Frontend**: Razor Views (součást ASP.NET Core MVC)
 - **Autentifikace**: OAuth 2.0, JWT
 - **Platby**: Možnosti integrace s platebními branami, jako je PayPal SDK nebo Stripe API, pro bezpečné online platby
 
@@ -49,7 +49,7 @@
 
 ## 7. Technologie a platformy
 - **Backend**: ASP.NET Core (C#) pro tvorbu API a backend logiky
-- **Frontend**: Blazor pro web, Xamarin/MAUI pro mobilní aplikace
+- **Frontend**: Razor Views (součást ASP.NET Core MVC)
 - **Databáze**: SQLite pro relační data
 - **Platby**: Stripe API nebo PayPal SDK pro bezpečné platby.
 - **Cílené platformy**: 
