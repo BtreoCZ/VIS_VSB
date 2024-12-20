@@ -18,4 +18,6 @@
 - Lazy load
 - Identity field
 - Foreign key mapping
-- Concrete Table Inheritance
+- MVC
+- Dependency Injection
+- Repository pattern
